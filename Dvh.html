@@ -1,0 +1,74 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .active{
+      display: block;
+    }
+    .firstP{
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    
+<p class="firstP " > im 1</p>
+    <p> im 2</p>
+    <p> im 3</p>
+    <script>
+    
+    let p = document.getElementsByTagName('p');
+    p[1].addEventListener("click"
+    ,  ()=>{
+        p[0].classList.toggle("active");
+        
+      })
+    
+    console.log(p[0].classList)
+    /*
+    
+    
+    class om {
+      constructor(a ,b,c){
+        this.name = a;
+        this.last = b;
+        this.address= 'katiya';
+      }
+       sayH(){
+        console.log(this.name + " hi");
+      }
+    }
+    
+    class om1 extends om {
+      constructor(a){
+        super(a);
+      }
+    }
+    
+     let om2 = new om1('ram','maravi');
+     *//*
+     let obj= {name:"om",last:"masram",
+       
+       Say(){
+        console.log( this.last)
+       }
+       
+     }
+     delete obj.last;
+     function om (){
+       console.log( "hii om")
+     }
+     // obj.fu=om();
+     
+      console.log(obj.name);
+      */
+      
+      
+        </script>
+  </body>
+  
+  </html>
